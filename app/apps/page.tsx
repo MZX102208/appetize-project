@@ -26,7 +26,7 @@ export default function AppsPage() {
     setFilteredData(filterText.length > 0 ?
       data.filter((appInfo) => appInfo.name?.includes(filterText.toString())) :
       data);
-  }, []);
+  }, [data]);
 
   return (
     <main className="flex flex-col m-2">
